@@ -72,8 +72,7 @@
       animation: fadeInUp 1s ease-out forwards;
       animation-delay: 1.5s;
     }
-    
-    /* Make it centered on larger screens (desktop) */
+
     @media screen and (min-width: 768px) {
       .main-text {
         top: 45%;
@@ -85,26 +84,24 @@
       }
     }
 
-    /* Phones in landscape mode (small width, horizontal orientation) */
     @media screen and (orientation: landscape) and (max-width: 768px) {
       .main-text {
         top: 60%;
       }
-    
       .click-message {
         top: 72%;
       }
     }
 
-    /* Phones in portrait mode only */
+    /* Portrait mode on phones */
     @media screen and (orientation: portrait) and (max-width: 768px) {
       .main-text {
-        top: 65%;
+        top: 45%;
         font-size: 6.5vw;
       }
 
       .click-message {
-        top: 70%;
+        top: 55%;
         font-size: 4vw;
       }
     }
