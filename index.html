@@ -58,14 +58,14 @@
     }
 
     .main-text {
-      top: 40%;
+      top: 65%;
       font-size: 4vw;
       animation: fadeInUp 1s ease-out forwards;
     }
 
     .click-message {
-      top: 50%;
-      font-size: 2vw;
+      top: 75%;
+      font-size: 2.5vw;
       animation: fadeInUp 1s ease-out forwards;
       animation-delay: 1.5s;
     }
@@ -78,6 +78,22 @@
       to {
         opacity: 1;
         transform: translate(-50%, 0);
+      }
+    }
+
+    /* Make text more readable on small screens (phones) */
+    @media screen and (max-width: 600px) {
+      .main-text {
+        font-size: 6vw;
+        top: 65%;
+      }
+      .click-message {
+        font-size: 4vw;
+        top: 75%;
+      }
+      .logo-container {
+        top: 4vh;
+        left: 4vw;
       }
     }
   </style>
