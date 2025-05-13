@@ -85,16 +85,6 @@
       }
     }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translate(-50%, 20px);
-      }
-      to {
-        opacity: 1;
-        transform: translate(-50%, 0);
-      }
-    }
     /* Phones in landscape mode (small width, horizontal orientation) */
     @media screen and (orientation: landscape) and (max-width: 768px) {
       .main-text {
@@ -106,6 +96,29 @@
       }
     }
 
+    /* Phones in portrait mode only */
+    @media screen and (orientation: portrait) and (max-width: 768px) {
+      .main-text {
+        top: 65%;
+        font-size: 6.5vw;
+      }
+
+      .click-message {
+        top: 70%;
+        font-size: 4vw;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
   </style>
 </head>
 <body>
