@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Video</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+        }
+        .logo-container {
+            position: absolute;
+            top: 5vw;
+            left: 5vw;
+            z-index: 20;
+            color: white;
+            font-family: Poppins, sans-serif;
+        }
+        .logo-container .welcome-text {
+            font-size: 3vw;
+            color: white;
+            margin-bottom: 1vw;
+        }
+        .logo-container img {
+            width: 50vw;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay" onclick="window.location.href='https://v2exhibitorapp-dh8umbdjb2m56xggksuxzr.streamlit.app/';"></div>
+    
+    <video autoplay muted loop playsinline>
+        <source src="assets/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="logo-container">
+        <div class="welcome-text">POWERED BY</div>
+        <img src="assets/logo.png" alt="Expo Logo"/>
+    </div>
+
+</body>
+</html>
