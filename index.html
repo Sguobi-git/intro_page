@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Intro Video</title>
@@ -61,6 +62,8 @@
       top: 65%;
       font-size: 5vw;
       animation: fadeInUp 1s ease-out forwards;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
     }
 
     .click-message {
@@ -69,7 +72,7 @@
       animation: fadeInUp 1s ease-out forwards;
       animation-delay: 1.5s;
     }
-
+    
     /* Make it centered on larger screens (desktop) */
     @media screen and (min-width: 768px) {
       .main-text {
@@ -93,15 +96,15 @@
       }
     }
     /* Phones in landscape mode (small width, horizontal orientation) */
-  @media screen and (orientation: landscape) and (max-width: 768px) {
-    .main-text {
-      top: 60%;
+    @media screen and (orientation: landscape) and (max-width: 768px) {
+      .main-text {
+        top: 60%;
+      }
+    
+      .click-message {
+        top: 72%;
+      }
     }
-  
-    .click-message {
-      top: 72%;
-    }
-  }
 
   </style>
 </head>
