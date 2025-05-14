@@ -73,6 +73,17 @@
       animation-delay: 1.5s;
     }
 
+    .overlay-link {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: block;
+    }
+
+    
     @media screen and (min-width: 768px) {
       .main-text {
         top: 45%;
@@ -120,7 +131,10 @@
 </head>
 <body>
 
-  <div class="overlay" onclick="window.location.href='https://v2exhibitorapp-bndezm34pago9qtcqst3hw.streamlit.app';"></div>
+<!--   <div class="overlay" onclick="window.location.href='https://v2exhibitorapp-bndezm34pago9qtcqst3hw.streamlit.app';"></div> -->
+<a href="https://v2exhibitorapp-bndezm34pago9qtcqst3hw.streamlit.app" class="overlay-link">
+  <div class="overlay"></div>
+</a>
 
 
   <video autoplay muted loop playsinline>
